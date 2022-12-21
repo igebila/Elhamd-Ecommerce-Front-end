@@ -1,0 +1,159 @@
+<!Doctype html>
+<html lang="en">      
+<head>
+<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elhamd| Account</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="shortcut icon" type="image/x-icon" href="image/Elhamd%20Logo.png">
+</head>  
+<body>
+   <div class="header">  
+   <div class="container">
+       <div class="navbar">
+          <div class="logo">
+            <a href="index.html"><img src="image/Elhamd%20Logo.png" width="70px"></a> 
+           </div>
+              <nav>
+                 <ul id="MenuItems">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="Products.html">Products</a></li>
+                    <li><a href="Accounts.html">Account</a></li>
+                    <li><a href="">Contact Us</a></li>
+                 </ul>   
+               </nav>
+                <img src="image/menu-bar2.jpg" class="menu-icon" onclick="menutoggle()">
+           </div>        
+        </div>
+    </div>
+<!------------account page----------->
+     
+  <div class="account-page">
+      <div class="container">
+          <div class="row">
+              <div class="col-2">
+                  <img src="image/Elhamd%20Logo.png" width="100%">
+              </div>
+              <div class="col-2">
+                <div class="form-container">
+                    <div class="form-btn">
+                        <span onclick="login()">Login</span>
+                        <span onclick="signup()">Signup</span>
+                        <hr id="Indicator">
+                    </div>
+<!--------------------lOGIN---------------------->                    
+                    <form id="LoginForm">
+                        <input type="text" placeholder="Username">
+                        <input type="password" placeholder="Password">
+                        <button type="submit" class="btn">Login</button>
+                        <a href="">Forgot Password</a>
+                    </form>
+    <!---------------Sign up----------------------->                
+                       <form id="SignForm">
+                         <input type="text" placeholder="Username">
+                         <input type="email" placeholder="Email">
+                         <input type="password" placeholder="Password">
+                         <button type="submit" class="btn">Signup</button>
+                        
+                    </form>
+                    
+                </div>
+              </div>
+          </div>
+      </div>
+  </div> 
+   
+   
+   
+   
+   
+   
+   
+   
+   <!-----------------Footer--------------->
+    <div class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col-1">
+                    <h3>Download Our App</h3>
+                    <p>Download for Andriod and Ios MobilePhone.</p>
+                    <div class="app-logo">
+                        <a href="https://googleplaystore.com"><img src="image/play-store.png"></a> 
+                       <a href="https://appstore.com"><img src="image/app-store.png"></a>  
+                       </div>
+                    </div>
+                <div class="footer-col-2">
+                    <img src="image/Elhamd%20Logo.png">
+                    <p>Our purpose is to sustainably Make the pleasure and Benefits of Fashion Accessible.</p>
+                    </div>
+                <div class="footer-col-3">
+                    <h3>Useful Links</h3>
+                        <ul>
+                            <li><a href="">Coupons</a></li>
+                            <li><a href="">Blog Post</a></li>
+                            <li><a href="">Return Policy</a></li>
+                            <li><a href="">Join Affiliate</a></li>
+                            
+
+                        </ul>
+                    </div>
+                <div class="footer-col-4">
+                    <h3>Follow Us</h3>
+                        <ul>
+                            <li><a href="#">Facebook</a></li>
+                            <li><a href="#">Twitter</a></li>
+                            <li><a href="#">Instagram</a></li>
+                            <li><a href="#">Telegram</a></li>
+                        </ul>
+                    </div>
+            
+                </div>
+            <hr>
+            <p class="copyright">Copyright 2020-Elhamd Fashion Design</p>
+            </div>
+        </div>
+        
+<!--------------js for toggle menu---------------------->
+    <script>
+     var MenuItems =document.getElementById("MenuItems");
+    
+        MenuItems.style.maxHeight = "0px";
+        
+        function menutoggle(){
+            if(MenuItems.style.maxHeight == "0px")
+                {
+                    MenuItems.style.maxHeight = "200px"
+                }
+            else
+                {
+                   MenuItems.style.maxHeight = "0px"; 
+                }
+        }
+    
+    </script>
+<!-----------------js for toggle form------------->
+           <script>
+        
+            var LoginForm = document.getElementById("LoginForm");
+            var SignForm = document.getElementById("SignForm");
+            var Indicator =  document.getElementById("Indicator");
+               
+               function signup(){
+                  SignForm.style.transform = "translatex(0px)";
+                  LoginForm.style.transform = "translatex(0px)";
+                  Indicator.style.transform = "translatex(100px)";   
+               }
+               
+               function login(){
+                  SignForm.style.transform = "translatex(300px)";
+                  LoginForm.style.transform = "translatex(300px)";
+                  Indicator.style.transform = "translatex(0px)";
+
+               }
+            </script>
+      
+      
+       
+</body>
+</html>
